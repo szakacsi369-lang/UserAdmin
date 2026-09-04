@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,19 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using UserAdmin.Views;
 
-namespace UserAdmin
+namespace UserAdmin.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for RegisterPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegisterPage : Page
     {
-        public MainWindow()
+        public RegisterPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new RegisterPage());
         }
     }
 }
