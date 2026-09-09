@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2026. Sze 04. 14:18
+-- Létrehozás ideje: 2026. Sze 09. 16:18
 -- Kiszolgáló verziója: 8.4.7
 -- PHP verzió: 8.3.28
 
@@ -33,6 +33,7 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(40) COLLATE utf8mb3_hungarian_ci DEFAULT NULL,
+  `Email` varchar(50) COLLATE utf8mb3_hungarian_ci DEFAULT NULL,
   `password` text COLLATE utf8mb3_hungarian_ci,
   `registeredAt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
