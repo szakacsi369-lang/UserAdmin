@@ -30,7 +30,7 @@ namespace UserAdmin.Views
 
         private void RegisterLink_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new RegisterPage());
         }
     }
 }
