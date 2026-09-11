@@ -28,3 +28,5 @@ D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\refint\UserAdmin
 D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\UserAdmin.pdb
 D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\UserAdmin.genruntimeconfig.cache
 D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\ref\UserAdmin.dll
+D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\Views\LoginPage.g.cs
+D:\Suli\C#Console\UserAdmin\UserAdmin\obj\Debug\net10.0-windows\Views\LoginPage.baml
