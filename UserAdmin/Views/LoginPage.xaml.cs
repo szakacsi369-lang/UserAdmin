@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserAdmin.Services;
 
 namespace UserAdmin.Views
 {
@@ -18,6 +19,7 @@ namespace UserAdmin.Views
     /// </summary>
     public partial class LoginPage : Page
     {
+        private readonly UserDbService _userDbService = new();
         public LoginPage()
         {
             InitializeComponent();
@@ -34,6 +36,24 @@ namespace UserAdmin.Views
                 ShowError("Érvénytelen email vagy jelszó");
                     
                 }
+            
+            var user = _userDbService.FindByEmail(email);
+
+            if (user is null)
+            {
+                ShowError("Nem regisztrált tag.");
+                return;
+            }
+            else if (user.Email == email && user.Password == password)
+            {
+                NavigationService.Navigate(new MembersPage());
+            }
+            else
+            {
+                ShowError("Nem megfelelő email vagy jelszó.");
+                return;
+            }
+
         }
 
         private void RegisterLink_Click(object sender, RoutedEventArgs e)
